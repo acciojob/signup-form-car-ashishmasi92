@@ -7,43 +7,46 @@
 </head>
 
 <body>
-
 <form method="post">
 	<label for="name">Name</label><br>
-		<input type="text" name="name" id="name" placeholder="Name"><br>
-	<label for="email">Email</label><br>
-		<input type="Email" name="email" id="email" placeholder="Email"><br>
-	
-	<label for="gender">Gender</label>
-	<label for="m">Male </label>
-		<input type="radio" name="gender" id="_m">
-	<label for="f">Female </label>
-		<input type="radio" name="gender" id="_f"><br>
-	
-	<label for="cars">Car Brands</label><br>
-	<select name="cars" id="cars">
-	<option value="">Please Choose your option</option>
-	<option  value="Volvo">Volvo</option>
-		<option value="Bmw">Bmw</option>
-</select><br>
+		<input type="text" name="name" id="name" placeholder="Name" required><br>
 
-	
-		
+	<label for="email">Email</label><br>
+		<input type="email" name="email" id="email" placeholder="Email" required><br>
+
+	<label for="gender">Gender</label><br>
+		<label for="_m">Male</label>
+		<input type="radio" name="gender" id="_m" required>
+		<label for="_f">Female</label>
+		<input type="radio" name="gender" id="_f" required><br>
+
+	<label for="cars">Car Brands</label><br>
+		<select name="cars" id="cars" required>
+			<option value="">Please choose an option</option>
+			<option value="volvo">Volvo</option>
+			<option value="saab">Saab</option>
+			<option value="mercedes">Mercedes</option>
+			<option value="audi">Audi</option>
+		</select><br>
+
 	<label for="age">Age</label><br>
-		<input type="number" name="age" id="age" placeholder="Age"><br>
+		<input type="number" name="age" id="age" placeholder="Age" required><br>
+
 	<label for="dob">DOB</label><br>
-	<input type="date" id="dob" name="dob"><br>
-	<label for="tel">Phoone Number</label><br>
-	<input type="tel" id="tel" name="tel"placeholder="xxx-xxx-xxxx"><br>
+		<input type="date" id="dob" name="dob" required><br>
+
+	<label for="tel">Phone Number</label><br>
+		<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" required><br>
+
 	<label for="password">Password</label><br>
-	<input type="password" name="password" id="password" placeholder="Password"><br>
+		<input type="password" name="password" id="password" placeholder="Password" required><br>
+
 	<label for="tos">I agree to the TOS</label>
-	<input type="checkbox" id="tos"><br>
+		<input type="checkbox" id="tos" required><br>
 
 	<button type="submit">Submit</button>
 	
 </form>
-
 	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
